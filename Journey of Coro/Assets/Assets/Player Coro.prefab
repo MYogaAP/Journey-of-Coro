@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 4786199785509660115}
   - component: {fileID: 4786199785509660124}
   - component: {fileID: 923659073}
+  - component: {fileID: 8511746705279884895}
   m_Layer: 0
   m_Name: Player Coro
   m_TagString: Player
@@ -110,17 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c95ee313718b07749a1ca3ce47783af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 923659073}
-  cam: {fileID: 0}
-  speed: 6
-  gravity: -9.81
-  jumpHeight: 3
-  groundCheck: {fileID: 1212221748}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 64
-  turnSmoothTime: 0.1
+  _playerSpeed: 20
+  _rotationSpeed: 10
+  _followCamera: {fileID: 0}
+  _jumpHeight: 1
+  _gravityValue: -9.81
 --- !u!143 &923659073
 CharacterController:
   m_ObjectHideFlags: 0
@@ -132,13 +127,27 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.14
-  m_Radius: 0.39
+  m_Height: 2
+  m_Radius: 0.6
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8511746705279884895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786199785509660113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a502f7a7371ff594dbdeb533ac05e7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemManager: {fileID: 0}
+  track: {fileID: 0}
 --- !u!1 &4786199786100700781
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,8 +175,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4786199786100700781}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.51801, y: 0.14139, z: 0.23585}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 5, y: 2, z: 3.83}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4786199785326948314}

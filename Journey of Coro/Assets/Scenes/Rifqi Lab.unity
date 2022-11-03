@@ -948,6 +948,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4786199785509660124, guid: 2540cc21074a755449fb99349f2cb9c9, type: 3}
+      propertyPath: _followCamera
+      value: 
+      objectReference: {fileID: 207191436}
     - target: {fileID: 4786199786100700782, guid: 2540cc21074a755449fb99349f2cb9c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -1035,7 +1039,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890216192}
-  m_LocalRotation: {x: 0.18910751, y: -0.000000016895914, z: 0.0000000032538556, w: 0.9819564}
+  m_LocalRotation: {x: 0.18910751, y: 0.000000016895918, z: -0.0000000032538565, w: 0.9819564}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

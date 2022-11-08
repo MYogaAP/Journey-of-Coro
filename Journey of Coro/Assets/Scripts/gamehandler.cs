@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gamehandler : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class gamehandler : MonoBehaviour
     void Update()
     {
         CoinText.text = "Score : " + coins;
+
+        if(coins > 1)
+        {
+            SceneManager.LoadScene("gamewin");
+        }
     }
 }

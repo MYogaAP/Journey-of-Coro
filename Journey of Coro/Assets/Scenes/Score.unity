@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8c1e19a2bec40384ab98bf7dc3b1f234, type: 2}
+  - {fileID: 2100000, guid: 69fec9371ae7a2c49a2224458b2635f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -219,7 +219,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &73160595
 GameObject:
@@ -484,7 +484,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1b96a603c2b19cb4dbd7d8f70dc619eb, type: 2}
+  - {fileID: 2100000, guid: 69fec9371ae7a2c49a2224458b2635f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -531,7 +531,7 @@ Transform:
   - {fileID: 389104409}
   - {fileID: 96052894}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &410076168
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 410076161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c432c906f39e31419007c54d6632e11, type: 3}
+  m_Script: {fileID: 11500000, guid: c95ee313718b07749a1ca3ce47783af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpeed: 5
@@ -638,7 +638,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 004ef189e29635e46bfad976bfef26e2, type: 2}
+  - {fileID: 2100000, guid: f160a6a62748d8f49911defa42b38138, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -681,7 +681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &529074528
 MonoBehaviour:
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 529074522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c37434c8a68cb44789891d89438ec25, type: 3}
+  m_Script: {fileID: 11500000, guid: 4541dd082f213404e99e3e310c08e17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gh: {fileID: 0}
@@ -968,7 +968,7 @@ RectTransform:
   m_Children:
   - {fileID: 2120167012}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 877614080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc06fd093801a0438a64e82492f90bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 50f9764d4d872f74e914bc588beb4428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CoinText: {fileID: 2120167013}
@@ -1157,7 +1157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1701734775
 GameObject:
@@ -1229,7 +1229,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 004ef189e29635e46bfad976bfef26e2, type: 2}
+  - {fileID: 2100000, guid: f160a6a62748d8f49911defa42b38138, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1272,7 +1272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1701734782
 MonoBehaviour:
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1701734775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c37434c8a68cb44789891d89438ec25, type: 3}
+  m_Script: {fileID: 11500000, guid: 4541dd082f213404e99e3e310c08e17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gh: {fileID: 0}
@@ -1402,7 +1402,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1802899103522148536, guid: 9709d0cc6908a1542adaf0d69b1150f3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1802899103522148536, guid: 9709d0cc6908a1542adaf0d69b1150f3, type: 3}
       propertyPath: m_LocalPosition.x

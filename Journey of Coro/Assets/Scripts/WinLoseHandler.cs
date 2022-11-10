@@ -4,24 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class gamehandler : MonoBehaviour
+public class WinLoseHandler : MonoBehaviour
 {
-    public Text CoinText;
-    public int coins = 0;
+    /*[SerializeField] Text ItemText;*/
+    [SerializeField] int itemsTaken = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        TrackItem.ItemScore = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CoinText.text = "Score : " + coins;
+        itemsTaken = TrackItem.ItemScore;
+       /* ItemText.text = "Score : " + itemsTaken;
 
-        if(coins > 1)
+        if(itemsTaken > 4)
         {
             SceneManager.LoadScene("gamewin");
-        }
+        }*/
     }
 }

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class TrackItem : MonoBehaviour
+public static class TrackItem 
 {
-    public int itemScore;
+    static int itemScore = 0;
+
+    public static int ItemScore { get => itemScore; set => itemScore = value; }
 }

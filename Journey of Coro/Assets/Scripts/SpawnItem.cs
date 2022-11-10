@@ -13,6 +13,7 @@ public class SpawnItem : MonoBehaviour
         {
             Instantiate(itemPrefabs[Random.Range(0, itemPrefabs.Length)], itemSpawnLocation[counter].transform.position, Quaternion.identity);
         }
+        TrackItem.TotalItems = itemSpawnLocation.Length;
     }
 
     void Update()

@@ -8,6 +8,7 @@ public class PickUpItem : MonoBehaviour
     {
         if (other.tag == "Item")
         {
+            GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
             TrackItem.ItemScore += 1;
         }

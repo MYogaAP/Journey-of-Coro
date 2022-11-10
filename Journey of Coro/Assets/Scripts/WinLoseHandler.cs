@@ -19,11 +19,11 @@ public class WinLoseHandler : MonoBehaviour
     void Update()
     {
         itemsTaken = TrackItem.ItemScore;
-       /* ItemText.text = "Score : " + itemsTaken;
+        /*ItemText.text = "Score : " + itemsTaken;*/
 
-        if(itemsTaken > 4)
+        if (itemsTaken == TrackItem.TotalItems)
         {
             SceneManager.LoadScene("gamewin");
-        }*/
+        }
     }
 }

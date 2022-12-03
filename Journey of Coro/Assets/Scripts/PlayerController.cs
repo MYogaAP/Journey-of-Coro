@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     
     private CharacterController _controller;
-    //private CapsuleCollider capsule;
+    
     [SerializeField]
     private float _playerSpeed = 5f;
 

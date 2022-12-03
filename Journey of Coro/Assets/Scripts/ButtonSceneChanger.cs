@@ -17,6 +17,7 @@ public class ButtonSceneChanger : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");
     }
 
+
     public static void PlayAgain()
     {
         SceneManager.LoadScene("LoadingScene");

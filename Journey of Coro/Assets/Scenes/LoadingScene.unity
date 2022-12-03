@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 1602620704}
   - component: {fileID: 1602620706}
   - component: {fileID: 1602620705}
+  - component: {fileID: 1602620707}
   m_Layer: 5
   m_Name: bg
   m_TagString: Untagged
@@ -500,7 +501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 166a8dd2698ef8d4cbf7e5a930057864, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -518,6 +519,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602620703}
   m_CullTransparentMesh: 1
+--- !u!114 &1602620707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602620703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25764a3112a45304ba51875d2b608f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 21300000, guid: a74f3678c93c967448391fb24b6735bc, type: 3}
+  - {fileID: 21300000, guid: bddd4df278215c64da71a82440c5274b, type: 3}
+  - {fileID: 21300000, guid: e3ffdd6ad4a8dd940928fc3c19370da4, type: 3}
+  - {fileID: 21300000, guid: 29434a7bae94fc042bdde435830cd09a, type: 3}
+  - {fileID: 21300000, guid: 0055881f1144056438469811b23e7d9b, type: 3}
+  - {fileID: 21300000, guid: a857228722a3b2c4798aedb601f7ef12, type: 3}
+  - {fileID: 21300000, guid: c14c21931c9ff224c974055cd1182565, type: 3}
+  - {fileID: 21300000, guid: 34b2c2cd039376d4693ba98372393204, type: 3}
+  - {fileID: 21300000, guid: 06e12e4d3ef4b884a801a5a7e3e52324, type: 3}
+  - {fileID: 21300000, guid: 5255a037753306545a5153ac1ef696b9, type: 3}
 --- !u!1 &1961845447
 GameObject:
   m_ObjectHideFlags: 0

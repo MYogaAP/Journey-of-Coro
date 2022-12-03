@@ -17,13 +17,17 @@ public class WinLoseHandler : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         itemsTaken = TrackItem.ItemScore;
-        /*ItemText.text = "Score : " + itemsTaken;*/
 
         if (itemsTaken == TrackItem.TotalItems)
         {
             SceneManager.LoadScene("GameWinScene");
+        }
+
+        if(TrackEnemyAwareness.Awareness >= 100)
+        {
+            SceneManager.LoadScene("GameLoseScene");
         }
     }
 }

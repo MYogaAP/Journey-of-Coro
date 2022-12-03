@@ -15,7 +15,7 @@ public class scene_loader : MonoBehaviour
 
     IEnumerator Loading()
     {
-        AsyncOperation loading = SceneManager.LoadSceneAsync("Level 1");
+        AsyncOperation loading = SceneManager.LoadSceneAsync(TrackGameState.ActiveState);
 
         while (!loading.isDone)
         {

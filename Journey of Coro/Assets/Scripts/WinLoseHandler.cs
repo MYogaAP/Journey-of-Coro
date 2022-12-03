@@ -23,7 +23,7 @@ public class WinLoseHandler : MonoBehaviour
 
         if (itemsTaken == TrackItem.TotalItems)
         {
-            SceneManager.LoadScene("gamewin");
+            SceneManager.LoadScene("GameWinScene");
         }
     }
 }

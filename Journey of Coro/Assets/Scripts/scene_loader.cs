@@ -15,7 +15,7 @@ public class scene_loader : MonoBehaviour
 
     IEnumerator Loading()
     {
-        AsyncOperation loading = SceneManager.LoadSceneAsync("tes_loading");
+        AsyncOperation loading = SceneManager.LoadSceneAsync("Level 1");
 
         while (!loading.isDone)
         {

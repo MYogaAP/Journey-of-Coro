@@ -6,11 +6,25 @@ using UnityEngine.UI;
 
 public class scene_loader : MonoBehaviour
 {
-     public Image loadingfill;
+    public Image loadingfill;
+    private float wait;
 
     void Start()
     {
-        StartCoroutine(Loading());
+        wait = 0;
+    }
+
+    private void Update()
+    {
+        if (wait != -1)
+        {
+            wait += Time.deltaTime;
+        }
+        if (wait > 3)
+        {
+            wait = -1;
+            StartCoroutine(Loading());
+        }
     }
 
     IEnumerator Loading()

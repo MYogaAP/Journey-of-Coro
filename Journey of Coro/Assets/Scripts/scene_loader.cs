@@ -33,7 +33,7 @@ public class scene_loader : MonoBehaviour
 
         while (!loading.isDone)
         {
-            loadingfill.fillAmount = loading.progress/0.9f;
+            loadingfill.fillAmount = loading.progress/5f;
             print(loading.progress);
             yield return null;
         }

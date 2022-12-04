@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseResume : MonoBehaviour
 {
-    public GameObject PauseScreen;
-    public GameObject PauseButton;
+    [SerializeField] private GameObject PauseScreen, PauseButton;
 
     bool GamePaused;
     // Start is called before the first frame update
@@ -17,6 +17,20 @@ public class PauseResume : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!GamePaused)
+            {
+                gameObject.GetComponent<AudioSource>().Play();
+                PauseGame();
+            }
+            else
+            {
+                gameObject.GetComponent<AudioSource>().Play();
+                ResumeGame();
+            }
+        }
+
         if (GamePaused)
             Time.timeScale = 0;
         else

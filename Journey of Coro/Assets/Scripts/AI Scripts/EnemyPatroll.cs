@@ -10,7 +10,7 @@ public class EnemyPatroll : MonoBehaviour
     private int waypointIndex;
     private Vector3 target;
     [SerializeField] private float stopMoving;
-    [SerializeField] private int changeDistance = 50;
+    [SerializeField] private int changeDistance = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,6 @@ public class EnemyPatroll : MonoBehaviour
                 if (Vector3.Distance(transform.position, target) < changeDistance)
                 {
                     IncreaseIndex();
-                    agent.velocity = new Vector3(agent.velocity.x, 10f);
                 }
             }
         } else

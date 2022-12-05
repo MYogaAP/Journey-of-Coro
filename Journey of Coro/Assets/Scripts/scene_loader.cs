@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class scene_loader : MonoBehaviour
 {
-    public Image loadingfill;
+    [SerializeField] private Image loadingfill;
     private float wait;
+    private bool doneFirstStory;
 
     void Start()
     {
@@ -37,5 +38,5 @@ public class scene_loader : MonoBehaviour
             print(loading.progress);
             yield return null;
         }
-    } 
+    }
 }

@@ -7,7 +7,7 @@ public class ButtonSceneChanger : MonoBehaviour
 {
     public static void ToLevelOne()
     {
-        TrackGameState.ActiveState = "Level 1";
+        TrackGameState.ActiveState = "Story Scene";
         SceneManager.LoadScene("LoadingScene");
     }
 

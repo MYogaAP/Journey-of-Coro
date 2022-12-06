@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAlert : MonoBehaviour
 {
     private float wait;
+    [SerializeField] GameObject warningText;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class EnemyAlert : MonoBehaviour
         EnemyFOV eye = GetComponent<EnemyFOV>();
         if (eye.CanSeePlayer)
         {
+            warningText.SetActive(true);
             wait += Time.deltaTime;
             if(wait > 0.1)
             {
@@ -25,6 +27,7 @@ public class EnemyAlert : MonoBehaviour
             }
         } else
         {
+            warningText.SetActive(false);
             wait = 0;
         }
         Debug.Log(TrackEnemyAwareness.Awareness);

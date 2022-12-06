@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     
     private CharacterController _controller;
+    private Animator mAnimator;
     
     [SerializeField]
     private float _playerSpeed = 5f;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _controller = GetComponent<CharacterController>();
+        mAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -55,6 +57,14 @@ public class PlayerController : MonoBehaviour
             Quaternion desiredRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
+        }
+
+        if(movementDirection != Vector3.zero && mAnimator != null && _groundedPlayer)
+        {
+            mAnimator.SetTrigger("TWalk");
+        } else
+        {
+            mAnimator.SetTrigger("TIdle");
         }
 
         if (Input.GetButtonDown("Jump") && _groundedPlayer)

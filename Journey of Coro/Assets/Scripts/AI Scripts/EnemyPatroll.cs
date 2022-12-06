@@ -40,6 +40,7 @@ public class EnemyPatroll : MonoBehaviour
                 if (Vector3.Distance(transform.position, target) < changeDistance)
                 {
                     IncreaseIndex();
+                    stopMoving = 10;
                 }
             }
         } else

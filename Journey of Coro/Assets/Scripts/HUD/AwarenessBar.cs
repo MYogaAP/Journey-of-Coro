@@ -19,7 +19,7 @@ public class AwarenessBar : MonoBehaviour
         slider.minValue = 0;
         slider.value = currentAwareness;
         fill.color = awarenessGradient.Evaluate(0);
-        awarenessText.text = string.Format("{0}%", currentAwareness);
+        awarenessText.text = string.Format("Awareness:\n{0}%", currentAwareness);
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class AwarenessBar : MonoBehaviour
             currentAwareness = TrackEnemyAwareness.Awareness;
             slider.value = currentAwareness;
             fill.color = awarenessGradient.Evaluate(slider.normalizedValue);
-            awarenessText.text = string.Format("{0}%", currentAwareness);
+            awarenessText.text = string.Format("Awareness:\n{0}%", currentAwareness);
         }
     }
 }

@@ -9,7 +9,7 @@ public class InGameTextChanger : MonoBehaviour
 
     void Update()
     {
-        missionPanelText.text = string.Format("Get The Ducks {0}/{1}\n\nTime Left: {2}", 
-            TrackItem.ItemScore, TrackItem.TotalItems, (int) TrackTimeLimit.TimeLeft);
+        missionPanelText.text = string.Format("Get The Ducks {0}/{1}\nTime Limit is {2} Minutes\nDon't Let the Human\nKnow Your Presence!", 
+            TrackItem.ItemScore, TrackItem.TotalItems, (int)TrackTimeLimit.TimeMax/60);
     }
 }

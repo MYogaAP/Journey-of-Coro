@@ -15,6 +15,7 @@ public class WinLoseHandler : MonoBehaviour
     {
         TrackItem.ItemScore = 0;
         TrackTimeLimit.TimeLeft = timeLimitInMinutes * 60;
+        TrackTimeLimit.TimeMax = timeLimitInMinutes * 60;
     }
 
     // Update is called once per frame

@@ -30,6 +30,5 @@ public class EnemyAlert : MonoBehaviour
             warningText.SetActive(false);
             wait = 0;
         }
-        Debug.Log(TrackEnemyAwareness.Awareness);
     }
 }

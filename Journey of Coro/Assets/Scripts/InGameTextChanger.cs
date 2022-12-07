@@ -9,7 +9,7 @@ public class InGameTextChanger : MonoBehaviour
 
     void Update()
     {
-        missionPanelText.text = string.Format("Get The Ducks {0}/{1}\nEnemy Awareness {2}%\nTime Left: {3}", 
-            TrackItem.ItemScore, TrackItem.TotalItems,TrackEnemyAwareness.Awareness, (int) TrackTimeLimit.TimeLeft);
+        missionPanelText.text = string.Format("Get The Ducks {0}/{1}\n\nTime Left: {2}", 
+            TrackItem.ItemScore, TrackItem.TotalItems, (int) TrackTimeLimit.TimeLeft);
     }
 }

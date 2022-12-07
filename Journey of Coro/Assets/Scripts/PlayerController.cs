@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     
     private CharacterController _controller;
     private Animator mAnimator;
+    private bool jumping;
     
     [SerializeField]
     private float _playerSpeed = 5f;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         _controller = GetComponent<CharacterController>();
         mAnimator = GetComponent<Animator>();
+        jumping = false;
     }
 
     // Update is called once per frame
@@ -39,6 +41,12 @@ public class PlayerController : MonoBehaviour
     void Movement()
     {
         _groundedPlayer = _controller.isGrounded;
+
+        if(jumping && _groundedPlayer)
+        {
+            jumping = false;
+        }
+
         if (_groundedPlayer && _playerVelocity.y < 0)
         {
             _playerVelocity.y = 0f;
@@ -59,7 +67,7 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, _rotationSpeed * Time.deltaTime);
         }
 
-        if(movementDirection != Vector3.zero && mAnimator != null && _groundedPlayer)
+        if(movementDirection != Vector3.zero && mAnimator != null && !jumping)
         {
             mAnimator.SetTrigger("TWalk");
         } else
@@ -67,9 +75,10 @@ public class PlayerController : MonoBehaviour
             mAnimator.SetTrigger("TIdle");
         }
 
-        if (Input.GetButtonDown("Jump") && _groundedPlayer)
+        if (Input.GetButtonDown("Jump") && !jumping)
         {
             _playerVelocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityValue);
+            jumping = true;
         }
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;

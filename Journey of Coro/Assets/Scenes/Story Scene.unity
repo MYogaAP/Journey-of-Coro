@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 122473432}
   - component: {fileID: 122473434}
   - component: {fileID: 122473433}
+  - component: {fileID: 122473435}
   m_Layer: 5
   m_Name: WordForChat
   m_TagString: Untagged
@@ -307,6 +308,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122473431}
   m_CullTransparentMesh: 1
+--- !u!95 &122473435
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122473431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbb34a4e8a75bf2468addfa93f23bba2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &230782661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1329,7 @@ GameObject:
   - component: {fileID: 1674739023}
   - component: {fileID: 1674739025}
   - component: {fileID: 1674739024}
+  - component: {fileID: 1674739026}
   m_Layer: 5
   m_Name: NameText
   m_TagString: Untagged
@@ -1432,6 +1454,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674739022}
   m_CullTransparentMesh: 1
+--- !u!95 &1674739026
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674739022}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbb34a4e8a75bf2468addfa93f23bba2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1732378192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2457539950104321801, guid: 1f46f6593e1da8847bbe914ac5102e37, type: 3}

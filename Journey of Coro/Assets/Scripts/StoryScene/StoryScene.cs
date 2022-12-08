@@ -84,6 +84,7 @@ public class StoryScene : MonoBehaviour
                 }
                 else
                 {
+                    dialogObj.SetActive(false);
                     dialogObj.SetActive(true);
                     chatName.text = story[currentStoryPage][currentWord];
                     currentWord++;

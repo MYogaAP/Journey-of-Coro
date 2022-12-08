@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b5a97ae3e10d20438e06c3d87aba985
+guid: 8d193cb3ca4434a4d8feda301130a26e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,18 +103,40 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dialog_box_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14
+        width: 1895
+        height: 457
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24093a3de4846bc4089e985c5044c021
+      internalID: 1101630641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 0cad3feb64f2fb743bcad683ab59b219
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dialog_box_0: 1101630641
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

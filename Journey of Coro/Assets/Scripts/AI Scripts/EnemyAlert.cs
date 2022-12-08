@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAlert : MonoBehaviour
 {
-    private float wait;
+    private float wait, regenerative;
     [SerializeField] GameObject warningText;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,8 @@ public class EnemyAlert : MonoBehaviour
         {
             warningText.SetActive(true);
             wait += Time.deltaTime;
-            if(wait > 0.1)
+            regenerative = 0;
+            if (wait > 0.1 && TrackEnemyAwareness.Awareness < 100)
             {
                 wait = 0;
                 TrackEnemyAwareness.Awareness += 1;
@@ -28,7 +29,13 @@ public class EnemyAlert : MonoBehaviour
         } else
         {
             warningText.SetActive(false);
+            regenerative += Time.deltaTime;
             wait = 0;
+            if (regenerative > 3 && TrackEnemyAwareness.Awareness > 0)
+            {
+                regenerative = 0;
+                TrackEnemyAwareness.Awareness -= 1;
+            }
         }
     }
 }

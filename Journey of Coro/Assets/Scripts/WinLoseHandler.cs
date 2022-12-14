@@ -14,6 +14,7 @@ public class WinLoseHandler : MonoBehaviour
     void Start()
     {
         TrackItem.ItemScore = 0;
+        TrackEnemyAwareness.Awareness = 0;
         TrackTimeLimit.TimeLeft = timeLimitInMinutes * 60;
         TrackTimeLimit.TimeMax = timeLimitInMinutes * 60;
     }

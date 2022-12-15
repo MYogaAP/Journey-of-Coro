@@ -11,6 +11,30 @@ public class ButtonSceneChanger : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");
     }
 
+    public static void ToLevelTwo()
+    {
+        TrackGameState.ActiveState = "Level 2";
+        SceneManager.LoadScene("LoadingScene");
+    }
+
+    public static void ToNextLevel()
+    {
+        string whatNext = "Start Menu";
+        
+        switch(TrackGameState.ActiveState)
+        {
+            case "Level 1": 
+                whatNext = "Level 2";
+                break;
+            /*case "Level 2":
+                whatNext = "Level 3";
+                break;*/
+        } 
+
+        TrackGameState.ActiveState = whatNext;
+        SceneManager.LoadScene("LoadingScene");
+    }
+
     public static void ToMenu()
     {
         TrackGameState.ActiveState = "Start Menu";

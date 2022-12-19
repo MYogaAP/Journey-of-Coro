@@ -11,6 +11,8 @@ public class EnemyPatroll : MonoBehaviour
     private Vector3 target;
     [SerializeField] private float stopMoving;
     [SerializeField] private int changeDistance = 100;
+    [SerializeField] private float waitTime = 10f;
+    [SerializeField] private float seeWaitTime = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,12 +42,12 @@ public class EnemyPatroll : MonoBehaviour
                 if (Vector3.Distance(transform.position, target) < changeDistance)
                 {
                     IncreaseIndex();
-                    stopMoving = 10;
+                    stopMoving = waitTime;
                 }
             }
         } else
         {
-            stopMoving = 3f;
+            stopMoving = seeWaitTime;
             StopMoving();
         }
     }

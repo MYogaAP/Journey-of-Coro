@@ -17,6 +17,12 @@ public class ButtonSceneChanger : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");
     }
 
+    public static void ToLevelThree()
+    {
+        TrackGameState.ActiveState = "Level 3";
+        SceneManager.LoadScene("LoadingScene");
+    }
+
     public static void ToNextLevel()
     {
         string whatNext = "Start Menu";
@@ -26,9 +32,12 @@ public class ButtonSceneChanger : MonoBehaviour
             case "Level 1": 
                 whatNext = "Level 2";
                 break;
-            /*case "Level 2":
+            case "Level 2":
                 whatNext = "Level 3";
-                break;*/
+                break;
+            case "Level 3":
+                whatNext = "Start Menu";
+                break;
         } 
 
         TrackGameState.ActiveState = whatNext;
